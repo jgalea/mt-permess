@@ -1,8 +1,16 @@
+<div align="center">
+
 # mt-permess
 
-CLI for Malta Planning Authority permits via the public [permess.mt](https://permess.mt/) API.
+[![License](https://img.shields.io/badge/LICENSE-MIT-5C9E31?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/PYTHON-3.9+-3776AB?style=for-the-badge)](https://www.python.org/)
+[![Built by](https://img.shields.io/badge/BUILT%20BY-JEAN%20GALEA-8A2BE2?style=for-the-badge)](https://github.com/jgalea)
 
-permess.mt is a third-party index of public PA applications (scraped from pa.org.mt). This tool wraps its JSON endpoints.
+**CLI for Malta planning permits via the [permess.mt](https://permess.mt/) public API.**
+
+</div>
+
+permess.mt is a third-party index of public Planning Authority applications. This tool wraps its JSON endpoints.
 
 ```bash
 pip install -e .
