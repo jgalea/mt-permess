@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mt-permess"
+version = "0.1.0"
+description = "CLI for Malta Planning Authority permits via permess.mt public API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Jean Galea" }]
+keywords = ["malta", "planning", "permits", "permess", "cli", "open-data"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jgalea/mt-permess"
+Issues = "https://github.com/jgalea/mt-permess/issues"
+
+[project.scripts]
+mt-permess = "mt_permess.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mt_permess"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
