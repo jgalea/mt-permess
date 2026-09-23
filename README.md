@@ -20,6 +20,16 @@ mt-permess near --place sliema --radius 400
 
 ## Install
 
+Works on macOS, Linux and Windows. Python 3.9+, no third-party dependencies.
+
+```bash
+pipx install git+https://github.com/jgalea/mt-permess
+```
+
+`uv tool install git+https://github.com/jgalea/mt-permess` does the same.
+
+From a clone on macOS or Linux:
+
 ```bash
 cd mt-permess
 python3 -m venv .venv
@@ -29,13 +39,26 @@ pip install -e .
 mt-permess stats
 ```
 
-Or without install:
+On Windows, in PowerShell:
+
+```powershell
+cd mt-permess
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -e .
+
+mt-permess stats
+```
+
+The Windows steps haven't been tested on a real Windows machine yet; if something breaks, open an issue.
+
+Or without installing:
 
 ```bash
 PYTHONPATH=src python3 -m mt_permess stats
 ```
 
-No third-party dependencies. Python 3.9+.
+On Windows: `$env:PYTHONPATH = "src"; py -m mt_permess stats`.
 
 ## Commands
 
